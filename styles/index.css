@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Arial;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+#menu{
+    display: flex;
+    font-family: Helvetica, Arial;
+    background-color: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu li{
+    padding: 20px;
+    list-style: none;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#menu > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post{
+    padding: 7px;
+}
+
+h2{
+    font-size: 30px;
+    color: #333;
+    font-family: Helvetica, Arial;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 10px;
+}
+
+.post p{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.boton_more{
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background-image: url("img/lines.png");
+}
+
+#sidebar h4 span{
+    background-color: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background-color: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+
+}
+
+#select_theme{
+    position: fixed;
+    top: 40%;
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 50px;
+    height: 100px;
+}
+
+#to_green, #to_red, #to_blue{
+    width: 25px;
+    height: 25px;
+    border: white 1px solid;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#to_green{
+    background-color: #235E3D;
+    cursor: pointer;
+}
+
+#to_blue{
+    background-color: #1F87C4;
+    cursor: pointer;
+}
+
+#to_red{
+    background-color: #CA3413;
+    cursor: pointer;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon{
+    margin-top: 20px;
+}
+
+#reloj{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica;
+    color: #333;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0px auto;
+    text-shadow: 0px 0px 14px #333;
+}
+
+#contact{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario_contacto{
+    display: flex;
+    flex-flow: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#sexo_contacto{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 82%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#edad_contacto, #fecha_contacto{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#enviar_contacto{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.form-error{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.ui-accordion .ui-accordion-header{
+    background: #333;
+    color: white;
+}
+
+.ui-accordion .ui-accordion-header-active{
+    color: #333;
+    background-color: white;
+    box-shadow: 0px 0px 15px #333;
+}
